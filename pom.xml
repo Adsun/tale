@@ -180,7 +180,7 @@
                     <descriptors>
                         <descriptor>package.xml</descriptor>
                     </descriptors>
-                    <outputDirectory>${project.build.directory}/dist/</outputDirectory>
+                    <outputDirectory>${project.build.directory}</outputDirectory>
                 </configuration>
                 <executions>
                     <execution>
