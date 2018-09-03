@@ -163,7 +163,7 @@
     </profiles>
 
     <build>
-        <finalName>tale</finalName>
+        <finalName>blog</finalName>
         <plugins>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
