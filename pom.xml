@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>io.github.otale</groupId>
-    <artifactId>tale</artifactId>
+    <artifactId>blog</artifactId>
     <version>latest</version>
 
     <properties>

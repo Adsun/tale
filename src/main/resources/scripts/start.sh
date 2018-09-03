@@ -6,7 +6,7 @@ source /etc/profile
 
 ## service name
 #########################    change   ######################################
-SERVICE_NAME=blog
+SERVICE_NAME=blog-latest
 APP_NAME=blog
 
 
