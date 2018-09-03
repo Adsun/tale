@@ -17,6 +17,7 @@
         <commonmark.version>0.11.0</commonmark.version>
         <rome.version>1.0</rome.version>
         <emoji.version>4.0.0</emoji.version>
+        <output.directory>/data</output.directory>
     </properties>
 
     <dependencies>
@@ -178,9 +179,9 @@
                 <configuration>
                     <appendAssemblyId>false</appendAssemblyId>
                     <descriptors>
-                        <descriptor>package.xml</descriptor>
+                        <descriptor>assemaly.xml</descriptor>
                     </descriptors>
-                    <outputDirectory>${project.build.directory}</outputDirectory>
+                    <outputDirectory>${output.directory}</outputDirectory>
                 </configuration>
                 <executions>
                     <execution>

@@ -5,19 +5,15 @@
     <id>customAssembly</id>
     <!-- dir -->
     <formats>
-        <format>dir</format>
+        <format>zip</format>
     </formats>
-
+    
     <includeBaseDirectory>false</includeBaseDirectory>
 
     <fileSets>
         <fileSet>
             <directory>src/main/resources/</directory>
             <outputDirectory>/resources</outputDirectory>
-        </fileSet>
-        <fileSet>
-            <directory>src/main/plugins/</directory>
-            <outputDirectory>/plugins</outputDirectory>
         </fileSet>
         <fileSet>
             <directory>src/main/resources/scripts</directory>
