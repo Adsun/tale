@@ -17,7 +17,7 @@
         <commonmark.version>0.11.0</commonmark.version>
         <rome.version>1.0</rome.version>
         <emoji.version>4.0.0</emoji.version>
-        <output.directory>/data</output.directory>
+        <output.directory>/</output.directory>
     </properties>
 
     <dependencies>
