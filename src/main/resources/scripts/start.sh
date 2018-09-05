@@ -15,7 +15,7 @@ APP_NAME=blog
 
 SERVICE_DIR=.
 
-JAR_NAME=$SERVICE_NAME.jar
+JAR_NAME=$SERVICE_NAME\.jar
 PID=$SERVICE_NAME\.pid
 
 #cd $SERVICE_DIR
@@ -23,7 +23,7 @@ PID=$SERVICE_NAME\.pid
 case "$1" in
 
     start)
-	nohup java -Xmx512M -Xms256M -jar  $JAR_NAME >> nohup_$SERVICE_NAME.out 2>&1 &
+	nohup java -Xmx512M -Xms256M -jar  $JAR_NAME >> nohup_$APP_NAME\.out 2>&1 &
         echo $! > $SERVICE_DIR/$PID
         echo "=== start $SERVICE_NAME"
         echo $SERVICE_DIR/$PID
