@@ -151,6 +151,18 @@ public class AdminApiController extends BaseController {
         contentsService.updateArticle(contents);
         return RestResponse.ok(cid);
     }
+    
+    @SysLog("删除页面")
+    @PostRoute("page/delete")
+    public RestResponse<?> deletePage(@BodyParam Contents contents) {
+
+        if (null == contents.getCid()) {
+            return RestResponse.fail("缺少参数，请重试");
+        }
+        Integer cid = contents.getCid();
+        contentsService.delete(cid);
+        return RestResponse.ok(cid);
+    }
 
     @GetRoute("categories")
     public RestResponse categories() {
