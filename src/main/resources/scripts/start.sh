@@ -32,7 +32,7 @@ case "$1" in
     stop)
         echo "=== stop $SERVICE_NAME"
         P_ID=`cat $SERVICE_DIR/$PID`
-        if [ "$P_ID" ] == ""; then
+        if [ "$P_ID" == "" ]; then
             echo "=== $SERVICE_NAME process not exists or stop success"
         else
             echo "=== $SERVICE_NAME process pid is:$P_ID"
