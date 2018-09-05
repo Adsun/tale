@@ -1,5 +1,4 @@
-#!/bin/sh
-source /etc/profile
+!/bin/sh
 ## java env
 #export JAVA_HOME=/usr/local/java/jdk1.7.0_72
 #export JRE_HOME=$JAVA_HOME/jre
