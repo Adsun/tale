@@ -25,14 +25,14 @@ case "$1" in
     rm -rf $SERVICE_DIR/$PID
 	nohup java -Xmx512M -Xms256M -jar  $JAR_NAME >> nohup_$APP_NAME\.out 2>&1 &
         echo $! > $SERVICE_DIR/$PID
-        echo "=== start $SERVICE_NAME"
+        echo "=== start $SERVICE_NAME, pid=$!"
         echo $SERVICE_DIR/$PID
         ;;
 
     stop)
         echo "=== stop $SERVICE_NAME"
         P_ID=`cat $SERVICE_DIR/$PID`
-        if [ "$P_ID" == "" ]; then
+        if [ "$P_ID" ] == ""; then
             echo "=== $SERVICE_NAME process not exists or stop success"
         else
             echo "=== $SERVICE_NAME process pid is:$P_ID"
